@@ -8,6 +8,7 @@ let words = "Rekomendasi rumah liburan untuk Anda";
 var changeToLowerCase = words.trim().toLocaleLowerCase();
 const results = reverseWord(changeToLowerCase);
 
+// Make first letter to be capital
 function titleCase(str) {
   var splitStr = str.toLowerCase().split(" ");
   for (var i = 0; i < splitStr.length; i++) {
@@ -17,8 +18,6 @@ function titleCase(str) {
   return splitStr.join(" ");
 }
 
-console.log(titleCase(results));
-
 // reverse without built-in javascript function
 function reverseWord(str) {
   let myReverseStr = "";
@@ -27,3 +26,5 @@ function reverseWord(str) {
   }
   return myReverseStr;
 }
+
+console.log(titleCase(results));
